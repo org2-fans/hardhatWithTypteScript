@@ -1,0 +1,90 @@
+{
+  "_from": "uniswap-v3-deploy-plugin@^0.1.0",
+  "_id": "uniswap-v3-deploy-plugin@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-goowszquDWierss0oCB91MoQY2W1ue1fixA7XrxPQbVU0pt7ZGUv2KvxqYtcjpey9AcJrveGJoGYvpSLxmkzaw==",
+  "_location": "/uniswap-v3-deploy-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "uniswap-v3-deploy-plugin@^0.1.0",
+    "name": "uniswap-v3-deploy-plugin",
+    "escapedName": "uniswap-v3-deploy-plugin",
+    "rawSpec": "^0.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/uniswap-v3-deploy-plugin/-/uniswap-v3-deploy-plugin-0.1.0.tgz",
+  "_shasum": "dd1798106373c16108aa2b5a0ec3b176c5c51d43",
+  "_spec": "uniswap-v3-deploy-plugin@^0.1.0",
+  "_where": "/Users/pjc/workspace/company/uniswap-v3/testdeploy",
+  "author": {
+    "name": "Omar Bohsali"
+  },
+  "bugs": {
+    "url": "https://github.com/omarish/uniswap-v3-deploy-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@uniswap/v3-core": "1.0.0",
+    "@uniswap/v3-periphery": "1.0.1",
+    "cli-table3": "^0.6.0"
+  },
+  "deprecated": false,
+  "description": "Hardhat plugin for Uniswap V3 deployment",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@types/chai": "^4.1.7",
+    "@types/fs-extra": "^5.0.4",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^8.10.38",
+    "chai": "^4.2.0",
+    "ethers": "^5.0.8",
+    "hardhat": "^2.0.0",
+    "mocha": "^7.1.2",
+    "prettier": "2.0.5",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^4.0.3"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "homepage": "https://github.com/omarish/uniswap-v3-deploy-plugin#readme",
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "hardhat",
+    "hardhat-plugin",
+    "uniswap"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "uniswap-v3-deploy-plugin",
+  "peerDependencies": {
+    "hardhat": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarish/uniswap-v3-deploy-plugin.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --config tslint.json --project tsconfig.json",
+    "lint:fix": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}' && tslint --fix --config tslint.json --project tsconfig.json",
+    "test": "mocha --exit --recursive 'test/**/*.test.ts'",
+    "watch": "tsc -w"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.1.0"
+}
